@@ -1,0 +1,108 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* modes */
+.light-mode{
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.dark-mode{
+    color: white;
+    background-color: #263335;
+    border: 1px solid #263335;
+}
+
+/* header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 3px;
+    box-shadow: 0px 0px 4px 0px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.header h1{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+.header .theme-mode-btn{
+    margin-right: 70px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* main */
+.main{
+    margin-top: 50px;
+}
+
+.main .search-container{
+    position: relative;
+    width: 500px;
+    margin-left: 50px;
+}
+
+.main .search-container .search-icon{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.main .search-container .search-bar{
+    width: 100%;
+    padding: 10px 10px 10px 45px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px;
+}
+
+.main .cards{
+    margin-top: 50px;
+}
+
+.main .cards .card-wrapper .card{
+    margin-bottom: 40px;
+    height: auto;
+    border: 1px solid #f2f7f7;
+    transition: transform 0.3s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main .cards .card-wrapper .card .flag-img{
+    height: 200px !important;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.main  .cards .card-wrapper .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main .cards .card-wrapper .card .card-body{
+    height: 200px !important;
+    overflow: hidden;
+}
+
+.main .cards .card-wrapper .card .card-body .list-group li{
+    list-style-type: none;
+}

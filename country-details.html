@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/country-details.css">
+
+    <title>Country details</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Where in the world?</h1>
+        <button class="theme-mode-btn"><i class="fa fa-moon-o"></i> Change mode</button>
+    </div>
+
+    <div class="main">
+        <div class="container">
+           <button class="back-btn">&#8592; Back</button>
+
+            <div class="country-details">
+                <!-- <div class="flag-img">
+                    <img src="${country.flags.svg}" alt="${country.flags.alt}">
+                </div>
+    
+                <div class="details">
+                    <h3>${country.name.official}</h3>
+                    <ul>
+                        <li><b>Native Name:</b> ${country.name.nativeName.eng.common || "N/A"}</li>
+                        <li><b>Population:</b> ${country.population}</li>
+                        <li><b>Region:</b> ${country.region}</li>
+                        <li><b>Sub Region:</b> ${country.subregion}</li>
+                        <li><b>Capital:</b> ${country.capital || "N/A"}</li>
+                        <li><b>Top Level Domain:</b> ${country.tld}</li>
+                        <li><b>Currencies:</b> ${country.currencies ? Object.values(country.currencies)[0].name : "N/A"}</li>                    
+                        <li><b>Languages:</b> ${country.languages ? Object.values(country.languages).join(", ") : "N/A"}</li>
+                    </ul>
+
+                    <div class="neighbor-countries">
+                        <h5>Border countries:</h5>
+                        ${bordersHTML}
+                    </div> 
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/country-details.js"></script>
+</body>
+</html>
