@@ -88,3 +88,14 @@ body{
 .main .container .country-details .details .neighbor-countries h4{
     height: 0px;
 }
+
+.main .container .country-details .details .border-btn{
+    margin-top: 10px;
+    border-radius: 3px;
+    width: 70px;
+    padding: 3px 4px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 0px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}

@@ -28,10 +28,11 @@ function drawCards(country){
     let bordersHTML = `${country.name.official} has no border countries`;
     if (country.borders) {
         bordersHTML = country.borders.map(border => 
-            `<button class="border-btn" onclick="getBorderCountry('${border}')">${border}</button>`
+            `<button class="border-btn ${localStorage.getItem("theme-mode") || 'light'}-mode" onclick="getBorderCountry('${border}')">${border}</button>`
         ).join(" ");
     }
-    console.log(country_details)
+console.log(bordersHTML);
+
     country_details.innerHTML = `
         <div class="flag-img">
                     <img src="${country.flags.svg}" alt="${country.flags.alt}">
